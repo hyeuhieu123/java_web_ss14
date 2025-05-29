@@ -17,7 +17,7 @@ public class LoginController {
 
     @PostMapping("login")
     public String login(@RequestParam String username, @RequestParam String password, HttpSession session, Model model) {
-        if (username.equals("hieupham") && password.equals("123")) {
+        if (username.equals("abc") && password.equals("123")) {
             session.setAttribute("username", username);
         } else {
             model.addAttribute("message", "Tài khoản hoặc mật khẩu không chính xác");
